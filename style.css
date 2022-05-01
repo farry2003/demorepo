@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+body {
+    background-color: #f6f6f0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: #0088ff;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-right: 19px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.mainContent a {
+    color: black;
+    text-decoration: none;
+}
+
+.mainContent img:hover {
+    cursor: pointer;
+}
+.main_img{
+    opacity: 1;
+    display: block;
+    align-items: center;
+    margin: auto auto;
+    margin-top: 90px;
+    /* margin-left: 438px; */
+
+}
+
+.saleItem {
+   display: flex;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.saleTitle {
+   font-size: 30px;
+   margin-bottom: 2px;
+}
+
+.saleSTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.categoryItem {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.categoryImg {
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.categoryTitle {
+   font-size: 30px;
+   margin-bottom: 2px;
+}
+
+.categorySTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.aboutContent {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.aboutLogo {
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.aboutInitials {
+    font-size: 160px;
+}
+
+.aboutNames li {
+    font-size: 40px;
+    display: inline;
+    white-space: pre;
+}
+
+footer {
+    background: #212121;
+    text-align: center;	
+    padding: 27px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 298px;
+
+}
+
+.footerTitle {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.fSubTitle {
+   font-size: 20px;
+   margin-top:3px;
+   color: white;
+}
+@keyframes circle {
+    from {
+      transform: scale(0);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(8);
+      opacity: 0;
+    }
+  }
+.circle {
+    /*   margin: 0 auto; */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+      left: 46.49%;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      opacity: 0.4;
+    }
+    
+    .one {
+      animation: circle 6s 4s infinite linear;
+      background: forestgreen;
+      opacity: 0.4;
+    }
+    
+    .two {
+      animation: circle 6s 2s infinite linear;
+      background: dodgerblue;
+      opacity: 0.4;
+    }
+    
+    .three {
+      animation: circle 6s 0s infinite linear;
+      background: rgb(83, 89, 88);
+      opacity: 0.1;
+    }
+    .container { 
+        height: 200px;
+        position: relative;
+        border: 13px solid green; 
+      }
+      
+      .center {
+        margin: -3px;
+        position: absolute;
+        top: 50%;
+        left: 61%;
+        transform: translate(-38%, -50%);
+        padding: 49px 60px;
+        font-size: x-large;
+        border: 3px solid rgb(0, 57, 42);
+        background-color: aqua;
+        border-radius: 10px 10px 10px 10px;
+
+        
+        
+      }
+      .center2 {
+        margin: -3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-158%, -50%);
+        padding: 49px 60px;
+        font-size: x-large;
+        border: 3px solid rgb(0, 57, 42);
+        background-color: aqua;
+        box-shadow: #212121;
+        border-radius: 10px 10px 10px 10px;
+      }
